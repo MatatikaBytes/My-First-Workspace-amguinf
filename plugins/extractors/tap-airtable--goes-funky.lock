@@ -1,0 +1,60 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-airtable",
+  "namespace": "tap_airtable",
+  "variant": "goes-funky",
+  "label": "Airtable",
+  "docs": "https://www.matatika.com/data-details/tap-airtable/",
+  "repo": "https://github.com/goes-funky/tap-airtable",
+  "pip_url": "git+https://github.com/goes-funky/tap-airtable.git",
+  "description": "Airtable is a cloud-based software that combines the functionality of a spreadsheet with the power of a database, allowing users to organize and manage data in a customizable and collaborative way.\n\nAirtable provides a user-friendly interface for creating and managing databases, with features such as drag-and-drop fields, customizable views, and real-time collaboration. Users can create tables to store data, link records between tables, and filter, sort, and group data in various ways. Airtable also offers integrations with other tools such as Slack, Zapier, and Google Drive, making it a versatile tool for managing projects, tracking inventory, organizing customer data, and more. With its flexibility and ease of use, Airtable is a popular choice for teams and individuals looking to streamline their data management processes.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/airtable.png",
+  "capabilities": [
+    "properties",
+    "discover"
+  ],
+  "settings": [
+    {
+      "name": "token",
+      "kind": "password",
+      "label": "Token",
+      "description": "An authentication key used to access the Airtable API.",
+      "protected": false
+    },
+    {
+      "name": "metadata_url",
+      "kind": "string",
+      "label": "Metadata URL",
+      "description": "The URL used to retrieve metadata about a specific Airtable base.",
+      "protected": false
+    },
+    {
+      "name": "records_url",
+      "kind": "string",
+      "label": "Records URL",
+      "description": "The URL used to retrieve records from a specific Airtable base.",
+      "protected": false
+    },
+    {
+      "name": "base_id",
+      "kind": "string",
+      "label": "Base ID",
+      "description": "A unique identifier for a specific Airtable base.",
+      "protected": false
+    },
+    {
+      "name": "selected_by_default",
+      "kind": "string",
+      "label": "Selected By Default",
+      "description": "A boolean value indicating whether a specific option is selected by default.",
+      "protected": false
+    },
+    {
+      "name": "remove_emojis",
+      "kind": "string",
+      "label": "Remove Emojis",
+      "description": "A boolean value indicating whether emojis should be removed from the data retrieved from Airtable.",
+      "protected": false
+    }
+  ]
+}
